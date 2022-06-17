@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.practicalForm {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #1c1c1c;
+    padding: 3.75% 5% 1.5% 5%;
+    border-radius: 12px;
+}
+
+h2, 
+h3 {
+    color: white;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.practicalForm,
+.workForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.headline {
+    display: flex;
+    margin-bottom: 1%
+}
+
+.icon {
+    height: 24px;
+    margin-right: 1.5%;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.skillList {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.practicalForm h2 {
+    margin-bottom: 3.5%;
+}
+
+.work {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.start {
+    margin-bottom: 1px;
+}
+
+.end {
+    margin-bottom: 1.25%;
+}
+
+.full {
+    margin-bottom: 4.5%;
+}
+
+.skills {
+    margin-bottom: 1.25%;
+}
+
+.add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #242424;
+    padding: 2% 0;
+    width: 25%;
+    font-size: 0.95vw;
+    color: #a6a6a6;
+    border: 1px transparent;
+    font-family: 'Kumbh Sans', sans-serif;
+    border-radius: 12px;
+    margin-bottom: 5%;
+    transition: .2s;
+}
+
+.add:hover {
+    color: #79d2b5;
+    background-color: #2e2e2e;
+}
+
+.add:active {
+    transform: scale(0.9);
+}
+
+.imgButton {
+    width: 1em;
+    margin-right: 5%;
+}
+
+

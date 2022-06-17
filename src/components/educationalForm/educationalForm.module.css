@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.schoolForm {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #1c1c1c;
+    padding: 3.75% 5% 5.75% 5%;
+    border-radius: 12px;
+}
+
+.schoolForm h3,
+.educationalForm h2 {
+    margin-bottom: 3%;
+    color: white;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.headline {
+    display: flex;
+}
+
+.icon {
+    height: 25px;
+    margin-right: 1.5%;
+}
+
+.schoolForm .duration1 {
+    margin-bottom: 2.5%;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    margin-right: 14px;
+    color: rgba(255, 255, 255, 0);
+    filter: invert(1);
+}
+
+input,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1.5% 0;
+    padding-left: 10px;
+    border-radius: 10px;
+    background-color: #292929;
+    border: 1px transparent;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    transition: all .3s,transform .2s,-webkit-transform .2s;
+}
+
+textarea {
+    width: 100%;
+}
+
+input:hover,
+textarea:hover {
+    background-color: #2d2d2d;
+}
+
+input:focus,
+textarea:focus {
+    background-color: #333;
+    outline: none
+}

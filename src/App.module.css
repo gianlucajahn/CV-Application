@@ -1,5 +1,18 @@
 .App {
+  display: flex;
+  justify-content: space-between;
   text-align: center;
+  padding-top: 1%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  padding: 0.55% 0 2.7% 1.25%;
+  background-color: black;
 }
 
 .App-logo {

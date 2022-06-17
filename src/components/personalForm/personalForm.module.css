@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.personalForm {
+    display: flex;
+    flex-direction: column;
+    background-color: #1c1c1c;
+    padding: 3.75% 5% 4.25% 5%;
+    border-radius: 12px;
+}
+
+.persForm {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.personalForm h2 {
+    margin-bottom: 4.25%;
+    color: white;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.contact {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5%;
+}
+
+input,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1.5% 0;
+    padding-left: 10px;
+    border-radius: 10px;
+    background-color: #292929;
+    border: 1px transparent;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    transition: all .3s,transform .2s,-webkit-transform .2s;
+}
+
+textarea {
+    width: 100%;
+}
+
+input:hover,
+textarea:hover {
+    background-color: #2d2d2d;
+}
+
+input:focus,
+textarea:focus {
+    background-color: #333;
+    outline: none
+}
+
+input:active,
+textarea:active {
+    transform: scale(0.98);
+}
+
+
+
+
