@@ -15,9 +15,23 @@ class Form extends React.Component {
   render() {
     return (
       <div className={styles['form']}>
-          <PersonalForm />
-          <EducationalForm />
-          <PracticalForm experience={this.props.experience} skills={this.props.skills}/>
+          <PersonalForm 
+            handleInfoChange={this.props.handleInfoChange} 
+            info={this.props.info} />
+          <EducationalForm 
+            handleInfoChange={this.props.handleInfoChange} 
+            info={this.props.info} />
+          <PracticalForm 
+            experience={this.props.experience} 
+            skills={this.props.skills} 
+            addWork={this.props.addWork} 
+            removeWork={this.props.removeWork} 
+            handleMouse={this.props.handleMouse} 
+            handleWorkChange={this.props.handleWorkChange}
+            handleMouseSkills={this.props.handleMouseSkills}
+            addSkill={this.props.addSkill}
+            removeSkill={this.props.removeSkill}
+            handleSkillChange={this.props.handleSkillChange} />
       </div>
     )
   }

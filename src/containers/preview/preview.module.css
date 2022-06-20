@@ -1,0 +1,14 @@
+.preview {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0%;
+    text-align: center;
+    width: 36%;
+    max-height: 100%;
+    position: fixed;
+    left: 55%;
+}
+
+.info {
+    display: flex;
+}

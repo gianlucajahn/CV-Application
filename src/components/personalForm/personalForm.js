@@ -17,8 +17,21 @@ class PersonalForm extends React.Component {
                     <div className={styles['name']}>
                         <input 
                           className={styles['input']}
-                          placeholder=' Full Name'
-                          name="nameInput"
+                          placeholder=' First Name'
+                          name="firstName"
+                          value={this.props.info[0].value}
+                          onChange={this.props.handleInfoChange}
+                          id='nameInput'
+                          type="text"
+                          required>
+                        </input>
+
+                        <input 
+                          className={styles['input']}
+                          placeholder=' Last Name'
+                          name="lastName"
+                          value={this.props.info[1].value}
+                          onChange={this.props.handleInfoChange}
                           id='nameInput'
                           type="text"
                           required>
@@ -29,6 +42,9 @@ class PersonalForm extends React.Component {
                         <input 
                           className={styles['input']}
                           placeholder=' Your Address'
+                          name="address"
+                          value={this.props.info[2].value}
+                          onChange={this.props.handleInfoChange}
                           id='addressInput'
                           type="text"
                           required>
@@ -40,6 +56,9 @@ class PersonalForm extends React.Component {
                           className={styles['input']}
                           placeholder=' Your eMail'
                           id='emailInput'
+                          name="email"
+                          value={this.props.info[3].value}
+                          onChange={this.props.handleInfoChange}
                           type="email"
                           required>
                         </input>
@@ -48,7 +67,9 @@ class PersonalForm extends React.Component {
                           className={styles['input']}
                           placeholder=' Your number'
                           id='telInput'
-                          name="telInput"
+                          name="phone"
+                          value={this.props.info[4].value}
+                          onChange={this.props.handleInfoChange}
                           type="tel"
                           required>
                         </input>
@@ -59,7 +80,9 @@ class PersonalForm extends React.Component {
                         className={styles['textarea']}
                         placeholder=" Tell us something about yourself!"
                         id="aboutInput"
-                        name="aboutInput"
+                        name="bio"
+                        value={this.props.info[5].value}
+                        onChange={this.props.handleInfoChange}
                         type="text"
                         required>
                       </textarea>

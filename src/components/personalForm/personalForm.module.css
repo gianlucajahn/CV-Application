@@ -29,6 +29,11 @@
     margin-bottom: 5%;
 }
 
+.name {
+    display: flex;
+    gap: 10px;
+}
+
 input,
 textarea {
     width: 100%;
