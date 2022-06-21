@@ -50,6 +50,19 @@ class PersonalForm extends React.Component {
                           required>
                         </input>
                     </div>
+
+                    <div className={styles['website']}>
+                        <input 
+                          className={styles['input']}
+                          placeholder=' Your Website'
+                          name="website"
+                          value={this.props.info[3].value}
+                          onChange={this.props.handleInfoChange}
+                          id='websiteInput'
+                          type="text"
+                          required>
+                        </input>
+                    </div>
             
                     <div className={styles['contact']}>
                         <input 
@@ -57,7 +70,7 @@ class PersonalForm extends React.Component {
                           placeholder=' Your eMail'
                           id='emailInput'
                           name="email"
-                          value={this.props.info[3].value}
+                          value={this.props.info[4].value}
                           onChange={this.props.handleInfoChange}
                           type="email"
                           required>
@@ -68,7 +81,7 @@ class PersonalForm extends React.Component {
                           placeholder=' Your number'
                           id='telInput'
                           name="phone"
-                          value={this.props.info[4].value}
+                          value={this.props.info[5].value}
                           onChange={this.props.handleInfoChange}
                           type="tel"
                           required>
@@ -81,7 +94,7 @@ class PersonalForm extends React.Component {
                         placeholder=" Tell us something about yourself!"
                         id="aboutInput"
                         name="bio"
-                        value={this.props.info[5].value}
+                        value={this.props.info[6].value}
                         onChange={this.props.handleInfoChange}
                         type="text"
                         required>

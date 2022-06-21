@@ -28,7 +28,7 @@ class HeaderPreview extends React.Component {
           </h1>
         </div>
         <div className={styles['currentPos']}>
-          <h2>{this.props.experience[0].position}</h2>
+          <h2 className={styles['positionHeader']}>{this.props.experience[0].position}</h2>
         </div>
       </div>
     )

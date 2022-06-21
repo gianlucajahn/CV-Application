@@ -23,7 +23,7 @@ class EducationalForm extends React.Component {
                           className={styles["input"]}
                           placeholder=" Your University"
                           name="universityName"
-                          value={this.props.info[6].value}
+                          value={this.props.info[7].value}
                           onChange={this.props.handleInfoChange}
                           id="universityInput"
                           type="text"
@@ -36,7 +36,7 @@ class EducationalForm extends React.Component {
                          className={styles["input"]}
                          placeholder=" Your Degree"
                          name="universityDegree"
-                         value={this.props.info[7].value}
+                         value={this.props.info[8].value}
                          onChange={this.props.handleInfoChange}
                          id="title1Input"
                          type="text"
@@ -47,12 +47,12 @@ class EducationalForm extends React.Component {
                    <div className={styles["duration1"]}>
                         <input
                           className={styles["input"]}
-                          placeholder=" Date"
+                          placeholder=" Timeframe"
                           name="universityDate"
-                          value={this.props.info[8].value}
+                          value={this.props.info[9].value}
                           onChange={this.props.handleInfoChange}
                           id="duration1Input"
-                          type="date"
+                          type="text"
                           required>
                         </input>  
                    </div>
@@ -66,7 +66,7 @@ class EducationalForm extends React.Component {
                           className={styles["input"]}
                           placeholder=" Your School"
                           name="schoolName"
-                          value={this.props.info[9].value}
+                          value={this.props.info[10].value}
                           onChange={this.props.handleInfoChange}
                           id="schoolInput"
                           type="text"
@@ -79,7 +79,7 @@ class EducationalForm extends React.Component {
                          className={styles["input"]}
                          placeholder=" Your Degree"
                          name="schoolDegree"
-                         value={this.props.info[10].value}
+                         value={this.props.info[11].value}
                          onChange={this.props.handleInfoChange}
                          id="title1Input"
                          type="text"
@@ -90,12 +90,12 @@ class EducationalForm extends React.Component {
                    <div className={styles["duration2"]}>
                         <input
                           className={styles["input"]}
-                          placeholder="Date"
+                          placeholder=" Timeframe"
                           name="schoolDate"
-                          value={this.props.info[11].value}
+                          value={this.props.info[12].value}
                           onChange={this.props.handleInfoChange}
                           id="duration1Input"
-                          type="date"
+                          type="text"
                           required>
                         </input>  
                    </div>

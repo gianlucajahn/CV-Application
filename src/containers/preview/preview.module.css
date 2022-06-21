@@ -3,10 +3,10 @@
     flex-direction: column;
     margin-top: 0%;
     text-align: center;
-    width: 36%;
-    max-height: 100%;
+    width: 670px;
+    height: 100vh !important;
     position: fixed;
-    left: 55%;
+    left: 50%;
 }
 
 .info {

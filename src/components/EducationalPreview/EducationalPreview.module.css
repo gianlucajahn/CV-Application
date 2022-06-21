@@ -1,5 +1,94 @@
-.education {
+.edu {
     background-color: #1c1c1c;
+    box-sizing: border-box;
     width: 31%;
-    height: 100%;
+    height: 78.35vh;
+    text-align: left;
+    padding: 35px 28px;
+    gap: 38px;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 10px;
+}
+
+.section-h3 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.details {
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.detail {
+    display: flex;
+}
+
+.detailImg {
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+}
+
+.detail p {
+    color: #a6a6a6;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.university {
+    margin-bottom: 22px;
+    color: white;
+}
+
+.university h4,
+.school h4 {
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    line-height: 1.5;
+    margin-bottom: 2px;
+}
+
+.university h5,
+.school h5 {
+    font-size: 11px;
+    font-weight: 400;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.5;
+    color: #a6a6a6;
+}
+
+.university p,
+.school p {
+    font-size: 10px;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.5;
+    color: #a6a6a6;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+    gap: 10px;
+}
+
+ul li::marker {
+    font-size: 1.55em;
+    color: #fff;
+}
+
+li {
+    font-weight: 400;
+    font-size: 11px;
+    font-family: 'Work Sans', sans-serif;
+    color: #a6a6a6;
 }

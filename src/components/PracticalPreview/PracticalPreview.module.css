@@ -1,0 +1,64 @@
+.practical {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 35px 35px 35px 28px;
+    text-align: start;
+    width: 69%;
+    border-bottom-right-radius: 10px;
+}
+
+.section-h3 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    margin-bottom: 14px;
+    color: black;
+}
+
+.section-h3::after {
+    content: "";
+    background-color: gray;
+    border-radius: 1px;
+    display: block;
+    height: 2px;
+    width: 50px;
+    margin-top: 10px;
+}
+
+.bio {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 11px;
+    color: #2e2e2e;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 42px;
+}
+
+.title {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 2px;
+}
+
+.company {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1.5;
+    margin-bottom: 4px;
+    color: #2e2e2e;
+}
+
+.desc {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1.5;
+    margin-bottom: 4px;
+    color: #2e2e2e;
+    margin-bottom: 25px;
+}

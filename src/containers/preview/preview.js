@@ -24,7 +24,8 @@ class Preview extends React.Component {
             info={this.props.info}
             skills={this.props.skills} />
           <PracticalPreview 
-            info={this.props.info} />
+            info={this.props.info}
+            experience={this.props.experience} />
         </div>
         <Download />
       </div>

@@ -18,7 +18,8 @@ class PracticalForm extends React.Component {
                              " SEO Optimization", 
                              " Express.js", 
                              " Test-Driven-Development", 
-                             " Continous Integration"
+                             " Continous Integration",
+                             " Git Workflow"
                             ];
 
         return (
@@ -78,17 +79,17 @@ class PracticalForm extends React.Component {
                             </div>
                         
                             <div className={styles['task']}>
-                              <input
+                              <textarea
                                 className={styles['input']}
                                 id={work.id}
                                 onChange={this.props.handleWorkChange}
                                 value={work.task}
-                                placeholder=" Your Main Tasks"
+                                placeholder=" Your main occupation, daily tasks and workfield"
                                 name="task"
                                 type="text"
                                 required
                                 size="20">
-                              </input>
+                              </textarea>
                             </div>
                         
                             <div className={styles['start']}>
@@ -167,7 +168,7 @@ class PracticalForm extends React.Component {
                       ))}
                       </div>
 
-                      {this.props.skills.length < 8 &&
+                      {this.props.skills.length < 9 &&
                           <button type="button" className={styles['add']} onClick={this.props.addSkill}>
                             <img src={require("../../icons/plus.png")} className={styles['imgButton']} />New
                           </button>

@@ -67,9 +67,18 @@ h3 {
     gap: 8px;
 }
 
+.task textarea {
+    height: 70px;
+}
+
 .input {
     box-sizing: border-box;
     width: 100%;
+    color: #a6a6a6;
+}
+
+input:focus {
+    color: #fff;
 }
 
 .start {
@@ -97,6 +106,7 @@ h3 {
     font-family: 'Kumbh Sans', sans-serif;
     margin-bottom: 5%;
     transition: .2s;
+    cursor: pointer;
 }
 
 .add {

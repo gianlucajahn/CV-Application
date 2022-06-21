@@ -48,7 +48,7 @@ textarea {
     background-color: #292929;
     border: 1px transparent;
     font-family: 'Poppins', sans-serif;
-    color: white;
+    color: #a6a6a6;
     transition: all .3s,transform .2s,-webkit-transform .2s;
 }
 
@@ -64,5 +64,6 @@ textarea:hover {
 input:focus,
 textarea:focus {
     background-color: #333;
-    outline: none
+    outline: none;
+    color: #fff;
 }

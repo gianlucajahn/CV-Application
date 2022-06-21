@@ -3,6 +3,7 @@ import styles from './form.module.css';
 import PersonalForm from '../../components/personalForm/personalForm';
 import EducationalForm from '../../components/educationalForm/educationalForm';
 import PracticalForm from '../../components/practicalForm/practicalForm';
+import AppLabel from '../../components/AppLabel/AppLabel';
 
 class Form extends React.Component {
   constructor(props) {
@@ -15,6 +16,8 @@ class Form extends React.Component {
   render() {
     return (
       <div className={styles['form']}>
+          <AppLabel 
+            autoFill={this.props.autoFill} />
           <PersonalForm 
             handleInfoChange={this.props.handleInfoChange} 
             info={this.props.info} />

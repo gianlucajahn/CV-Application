@@ -12,7 +12,24 @@ class PracticalPreview extends React.Component {
   render() {
     return (
       <div className={styles['practical']}>
+        <div className={styles['profile']}>
+          <h3 className={styles['section-h3']}>PROFILE</h3>
+          <p className={styles['bio']}>{this.props.info[6].value}</p>
+        </div>
+  
+        <div className={styles['work-section']}>
+          <h3 className={styles['section-h3']}>WORK EXPERIENCE</h3>
 
+          {this.props.experience[0].company === "" ? "" : this.props.experience.map((exp, i) => {
+            return (
+              <div className={styles['workDiv']} key={i}>
+                <h4 className={styles['title']}>{exp.position}</h4>
+                <h5 className={styles['company']}>{exp.company} | {exp.start} - {exp.end}</h5>
+                <p className={styles['desc']}>{exp.task}</p>
+              </div>
+            )
+          })}
+        </div>
       </div>
     )
   }

@@ -3,6 +3,7 @@ import Form from './containers/form/form.js';
 import Preview from './containers/preview/preview.js';
 import styles from './App.module.css';
 import uniqid from "uniqid";
+import autofilledState from './utils/autofill.js';
 
 class App extends React.Component {
   constructor(props) {
@@ -22,6 +23,11 @@ class App extends React.Component {
         },
         {
           name: "address",
+          value: "",
+          id: uniqid()
+        },
+        {
+          name: "website",
           value: "",
           id: uniqid()
         },
@@ -128,6 +134,7 @@ class App extends React.Component {
     this.removeSkill = this.removeSkill.bind(this);
     this.handleSkillChange = this.handleSkillChange.bind(this);
     this.handleInfoChange = this.handleInfoChange.bind(this);
+    this.autoFill = this.autoFill.bind(this);
   }
 
   addWork(e) {
@@ -253,11 +260,21 @@ class App extends React.Component {
     });
   }
 
+  autoFill(e) {
+    this.setState({
+      ...this.state, 
+      info: autofilledState.info,
+      experience: autofilledState.experience,
+      skills: autofilledState.skills
+    });
+  }
+
   render() {
     return (
       <div className={styles['body']}>
         <div className={styles['App']}>
-          <Form 
+          <Form
+            autoFill={this.autoFill}
             info={this.state.info}
             experience={this.state.experience} 
             skills={this.state.skills} 
