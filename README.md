@@ -6,7 +6,7 @@ An SPA to create a CV with. You can add, edit and delete input fields to put you
 [Live Demo]()
 
 ## 🎥 Showcase
-You can see a GIF of my application below. I am using the autofill functionality to preview an automatically filled CV. <br />
+You can see a GIF of my application below. I am using the autofill functionality to preview an automatically filled CV. <br /> <br />
 ![](https://github.com/gianlucajahn/cvApps/blob/main/CVshowcase.gif?raw=true)
 
 ## Performance
