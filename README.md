@@ -12,7 +12,7 @@ You can see a GIF of my application below. I am using the autofill functionality
 ## Performance
 I let [Google Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=de) run over my application to check for it's **performance, accessibility, use of best practices and SEO optimization**. You can view the results right below this paragraph.
 
-![Google Lighthouse Performance Results](https://i.ibb.co/Qbp4PmN/results.png)
+![Google Lighthouse Performance Results](https://i.ibb.co/ngkMJdN/results.png)
 
 ## Motivation
 My motivation in building this project was to further solidify my understanding of how React handles state. For me at the time, a CV application that needs to handle all user data in state seemed like a reasonable approach to it. Furthermore, I created CVs for all my friends for some years now and felt like some automation to speed up that process wouldn't do no harm.
