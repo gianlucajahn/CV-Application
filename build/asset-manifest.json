@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/CV-Application/static/css/main.509a0fae.css",
+    "main.js": "/CV-Application/static/js/main.24a41d67.js",
+    "static/js/703.a1dcbc2f.chunk.js": "/CV-Application/static/js/703.a1dcbc2f.chunk.js",
+    "static/js/56.54c23017.chunk.js": "/CV-Application/static/js/56.54c23017.chunk.js",
+    "static/js/787.dbc30ae6.chunk.js": "/CV-Application/static/js/787.dbc30ae6.chunk.js",
+    "static/media/skills.png": "/CV-Application/static/media/skills.8b8c463343e1ba306144.png",
+    "static/media/work.png": "/CV-Application/static/media/work.7feb4588824660281593.png",
+    "static/media/school.png": "/CV-Application/static/media/school.9b885d37137ed5c84626.png",
+    "static/media/website.png": "/CV-Application/static/media/website.207ea134fccabcb9139e.png",
+    "static/media/email.png": "/CV-Application/static/media/email.e0328e86831e87d53b38.png",
+    "static/media/address.png": "/CV-Application/static/media/address.e22ffbbca6e7cb83f7d0.png",
+    "index.html": "/CV-Application/index.html",
+    "static/media/remove.svg": "/CV-Application/static/media/remove.0f91546fb1b9984d2b5e6e507edafeef.svg",
+    "main.509a0fae.css.map": "/CV-Application/static/css/main.509a0fae.css.map",
+    "main.24a41d67.js.map": "/CV-Application/static/js/main.24a41d67.js.map",
+    "703.a1dcbc2f.chunk.js.map": "/CV-Application/static/js/703.a1dcbc2f.chunk.js.map",
+    "56.54c23017.chunk.js.map": "/CV-Application/static/js/56.54c23017.chunk.js.map",
+    "787.dbc30ae6.chunk.js.map": "/CV-Application/static/js/787.dbc30ae6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.509a0fae.css",
+    "static/js/main.24a41d67.js"
+  ]
+}

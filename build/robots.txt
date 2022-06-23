@@ -1,0 +1,6 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
+
+Thanks for checking out my application. Feel free to contact me! 
+Gianluca
