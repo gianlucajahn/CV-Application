@@ -9,7 +9,7 @@ An SPA to create a CV with. You can add, edit and delete input fields to put you
 You can see a GIF of my application below. I am using the autofill functionality to preview an automatically filled CV.
 
 ## Performance
-I let [Google Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=de) run over my application to check for it's performance, accessibility, use of best practices and SEO optimization. You can view the results right below this paragraph.
+I let [Google Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=de) run over my application to check for it's **performance, accessibility, use of best practices and SEO optimization**. You can view the results right below this paragraph.
 
 ![Google Lighthouse Performance Results](https://i.ibb.co/Qbp4PmN/results.png)
 
