@@ -280,7 +280,7 @@ class App extends React.Component {
     });
   }
 
-    // Handling edits for input fields that control info state
+  // Handling edits for input fields that control info state
   handleInfoChange(e) {
     const newInfo = this.state.info.map((information, i) => {
       if (information.name === e.target.name) {
