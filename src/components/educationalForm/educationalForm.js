@@ -16,7 +16,7 @@ class EducationalForm extends React.Component {
                    <h2>Educational Data</h2>
                    <div className={styles["university"]}>
                      <div className={styles['headline']}>
-                        <img src={"../../icons/gradcap.png"} className={styles['icon']} alt="University Icon"/>
+                        <img src={require("../../icons/gradcap.png")} className={styles['icon']} alt="University Icon"/>
                         <h3>University</h3>
                       </div>
                        <input 
