@@ -1,4 +1,4 @@
-# 📑 CV Creator
+# 📑 CV Application
 
 An SPA to create a CV with. You can add, edit and delete input fields to put your data in. All of these changes are adopted by the preview CV in real-time. Once you are happy with the result, you can save and download your CV to your local machine via a simple button click. Also comes with a functionality to autofill all fields and look at what the CV would look like if you filled it out by hand.
 
