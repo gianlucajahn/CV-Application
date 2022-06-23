@@ -1,6 +1,7 @@
 .App {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   text-align: center;
   padding-top: 1%;
 }
@@ -47,5 +48,11 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1000px) {
+  .App {
+    justify-content: center;
   }
 }

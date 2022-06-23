@@ -16,7 +16,7 @@ class EducationalForm extends React.Component {
                    <h2>Educational Data</h2>
                    <div className={styles["university"]}>
                      <div className={styles['headline']}>
-                        <img src={"../../icons/gradcap.png"} className={styles['icon']} />
+                        <img src={"../../icons/gradcap.png"} className={styles['icon']} alt="University Icon"/>
                         <h3>University</h3>
                       </div>
                        <input 
@@ -59,7 +59,7 @@ class EducationalForm extends React.Component {
 
                    <div className={styles["school"]}>
                      <div className={styles['headline']}>
-                        <img src={require("../../icons/school.png")} className={styles['icon']} />
+                        <img src={require("../../icons/school.png")} className={styles['icon']} alt="School Icon"/>
                         <h3>School</h3>
                       </div>
                        <input 
@@ -81,7 +81,7 @@ class EducationalForm extends React.Component {
                          name="schoolDegree"
                          value={this.props.info[11].value}
                          onChange={this.props.handleInfoChange}
-                         id="title1Input"
+                         id="title2Input"
                          type="text"
                          required>
                        </input>
@@ -94,7 +94,7 @@ class EducationalForm extends React.Component {
                           name="schoolDate"
                           value={this.props.info[12].value}
                           onChange={this.props.handleInfoChange}
-                          id="duration1Input"
+                          id="duration2Input"
                           type="text"
                           required>
                         </input>  

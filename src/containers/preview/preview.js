@@ -3,7 +3,6 @@ import styles from './preview.module.css';
 import HeaderPreview from '../../components/HeaderPreview/HeaderPreview';
 import EducationalPreview from '../../components/EducationalPreview/EducationalPreview';
 import PracticalPreview from '../../components/PracticalPreview/PracticalPreview';
-import Download from '../../components/Download/Download';
 
 class Preview extends React.Component {
   constructor(props) {
@@ -15,7 +14,7 @@ class Preview extends React.Component {
 
   render() {
     return (
-      <div className={styles["preview"]}>
+      <div className={this.props.mobile.formIsOpen ? styles['notDisplayed'] : styles["preview"]} id="preview">
         <HeaderPreview 
           info={this.props.info}
           experience={this.props.experience} />
@@ -27,7 +26,6 @@ class Preview extends React.Component {
             info={this.props.info}
             experience={this.props.experience} />
         </div>
-        <Download />
       </div>
     )
   }

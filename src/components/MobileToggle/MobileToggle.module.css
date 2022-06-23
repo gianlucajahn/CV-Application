@@ -1,0 +1,32 @@
+.toggle {
+    display: none;
+    margin: 0 auto;
+    margin-top: 20px;
+    justify-content: center;
+    color: #2e2e2e;
+    align-items: center;
+    font-size: 18px;
+    gap: 8px;
+    background-color: #79d2b5;
+    font-family: 'Kumbh Sans', sans-serif;
+    padding: 10px 10px;
+    border-radius: 12px;
+    width: 150px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.toggle img {
+    padding-top: 4px;
+    width: 25px;
+}
+
+.toggle:active {
+    transform: scale(0.9);
+}
+
+@media (max-width: 1000px) {
+  .toggle {
+    display: flex;
+  }
+}

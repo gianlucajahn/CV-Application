@@ -4,6 +4,7 @@ import PersonalForm from '../../components/personalForm/personalForm';
 import EducationalForm from '../../components/educationalForm/educationalForm';
 import PracticalForm from '../../components/practicalForm/practicalForm';
 import AppLabel from '../../components/AppLabel/AppLabel';
+import { toHaveStyle } from '@testing-library/jest-dom/dist/matchers';
 
 class Form extends React.Component {
   constructor(props) {
@@ -15,9 +16,11 @@ class Form extends React.Component {
 
   render() {
     return (
-      <div className={styles['form']}>
+      <div className={this.props.mobile.formIsOpen ? styles['form'] : styles['notDisplayed']}>
           <AppLabel 
-            autoFill={this.props.autoFill} />
+            autoFill={this.props.autoFill}
+            state={this.props.state}
+            printDocument={this.props.printDocument} />
           <PersonalForm 
             handleInfoChange={this.props.handleInfoChange} 
             info={this.props.info} />

@@ -11,7 +11,46 @@
     min-width: 30%;
     max-height: 100%;
     padding: 0% 2.5%;
-    gap: 45px;
+    gap: 35px;
+}
+
+.notDisplayed {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .form {
+      min-width: 60%;
+      max-width: 65%;
+    }
+}
+
+@media (max-width: 800px) {
+    .form {
+        min-width: 70%;
+        max-width: 75%;
+      }
+}
+
+@media (max-width: 600px) {
+    .form {
+        min-width: 77.5%;
+        max-width: 80%;
+      }
+}
+
+@media (max-width: 450px) {
+    .form {
+        min-width: 82.5%;
+        max-width: 85%;
+      }
+}
+
+@media (max-width: 375px) {
+    .form {
+        min-width: 87.5%;
+        max-width: 90%;
+      }
 }
 
 

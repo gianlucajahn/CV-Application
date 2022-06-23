@@ -21,7 +21,7 @@ class PersonalForm extends React.Component {
                           name="firstName"
                           value={this.props.info[0].value}
                           onChange={this.props.handleInfoChange}
-                          id='nameInput'
+                          id='firstNameInput'
                           type="text"
                           required>
                         </input>
@@ -32,7 +32,7 @@ class PersonalForm extends React.Component {
                           name="lastName"
                           value={this.props.info[1].value}
                           onChange={this.props.handleInfoChange}
-                          id='nameInput'
+                          id='lastNameInput'
                           type="text"
                           required>
                         </input>

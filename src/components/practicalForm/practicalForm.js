@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './practicalForm.module.css';
 import { ReactComponent as RemoveSVG } from '../../icons/remove.svg';
+import exampleSkills from '../../utils/exampleSkills';
 
 class PracticalForm extends React.Component {
     constructor(props) {
@@ -11,17 +12,6 @@ class PracticalForm extends React.Component {
     }
 
     render() {
-      const exampleSkills = [" React", 
-                             " Node.js", 
-                             " PostgreSQL", 
-                             " Photoshop", 
-                             " SEO Optimization", 
-                             " Express.js", 
-                             " Test-Driven-Development", 
-                             " Continous Integration",
-                             " Git Workflow"
-                            ];
-
         return (
             <div className={styles['practicalForm']}>
                 <h2>Practical Experience</h2>
@@ -32,13 +22,16 @@ class PracticalForm extends React.Component {
                           <div key={work.id} className={styles['work']}>
                             <div>
                               <div className={styles['headline']}>
-                                <img src={require("../../icons/work.png")} className={styles['icon']} fill="currentColor" />
+                                <img src={require("../../icons/work.png")} className={styles['icon']} fill="currentColor" alt="Work Icon"/>
                                 <h3>Work Experience #{index + 1}</h3>
                                 <div className={styles['divRemove']}>
 
                                   {this.props.experience.length > 1 &&
                                   <button 
                                     type="button" 
+                                    name="removeExperience"
+                                    title="remove"
+                                    aria-label="Close"
                                     id={work.id}
                                     className={styles['buttonRemove']} 
                                     onMouseEnter={this.props.handleMouse} 
@@ -46,7 +39,7 @@ class PracticalForm extends React.Component {
                                     onClick={() => this.props.removeWork(index)}>
                                     <RemoveSVG 
                                       style={{ fill: this.props.experience[index].isHovered ? "#79d2b5" : "#a6a6a6" }} 
-                                      className={styles['imgRemove']}/>
+                                      className={styles['imgRemove']} alt="Remove Icon"/>
                                   </button>
                                   }
                               </div>
@@ -123,8 +116,8 @@ class PracticalForm extends React.Component {
                         ))}
 
                         {this.props.experience.length < 3 &&
-                          <button type="button" className={styles['add']} onClick={this.props.addWork}>
-                            <img src={require("../../icons/plus.png")} className={styles['imgButton']} />New
+                          <button type="button" className={styles['add']} onClick={this.props.addWork} aria-label="add">
+                            <img src={require("../../icons/plus.png")} className={styles['imgButton']} alt="Add Icon"/>New
                           </button>
                         }
 
@@ -132,7 +125,7 @@ class PracticalForm extends React.Component {
                     <div className={styles['skillList']}>
 
                       <div className={styles['headline']}>
-                        <img src={require("../../icons/skills.png")} className={styles['icon']} />
+                        <img src={require("../../icons/skills.png")} className={styles['icon']} alt="Skills Icon"/>
                         <h3>Skills & Technologies</h3>
                       </div>
 
@@ -154,6 +147,8 @@ class PracticalForm extends React.Component {
                           {this.props.skills.length > 1 &&
                             <button 
                               type="button" 
+                              name="removeSkill"
+                              title="remove"
                               id={skill.id}
                               className={styles['buttonRemove']} 
                               onMouseEnter={this.props.handleMouseSkills} 
@@ -169,8 +164,8 @@ class PracticalForm extends React.Component {
                       </div>
 
                       {this.props.skills.length < 9 &&
-                          <button type="button" className={styles['add']} onClick={this.props.addSkill}>
-                            <img src={require("../../icons/plus.png")} className={styles['imgButton']} />New
+                          <button type="button" className={styles['add']} onClick={this.props.addSkill} aria-label="Close" alt="remove">
+                            <img src={require("../../icons/plus.png")} className={styles['imgButton']} alt="Add Icon"/>New
                           </button>
                       }
 
