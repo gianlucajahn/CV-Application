@@ -17,23 +17,10 @@ I let [Google Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/b
 ## Motivation
 My motivation in building this project was to further solidify my understanding of how React handles state. For me at the time, a CV application that needs to handle all user data in state seemed like a reasonable approach to it. Furthermore, I created CVs for all my friends for some years now and felt like some automation to speed up that process wouldn't do no harm.
 
-## Problems and how I solved them
-
-❓ **Problem:** Recolor specific buttons on hover
-
-❕ **Solution:** While mapping over the current array containing the user's work experience or skills, all buttons get unique ID's through uniqid() and an onMouseEnter + onMouseLeave property. A function from App.js is handed down into these properties and maps over the experience or skill array, changing the "fill:" attribute for the SVG in the button whose ID matches the button that held said onMouseEnter/onMouseLeave property. 
-
-
-
-❓ **Problem:** Being unable to render the form and preview on mobile reasonably
-
-❕ **Solution:** Giving both components conditional class assignments that relied on a piece of state. Said state holds information about which of both components is to be rendered at a time.
-
-
-
-❓ **Problem:** Requiering the user to be able to download their CV
-
-❕ **Solution:** Utilizing both the 'html2canvas' and 'jsPDF' libraries. First, I selected the component that is to be printed into a PDF. Said component is converted into an image (png) by the html2canvas toDataURL method. Afterwards, a new jsPDF() const is created, proportions of the image are being aligned with proportions of the PDF and the .png image is being added and saved to the PDF.
+## What I learned
+- mapping over arrays in state to make sure the selected elements receive changes on user interactions with the site
+- using conditional class assignments to either render a desktop or a mobile view for the application, depending on screen width
+- using external libraries within my application to enable the user to download and save their CV
 
 ## Features
 - Autofill Functionality
