@@ -22,7 +22,7 @@ I let [Google Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/b
 
 ## Features ✨
 - Autofill Functionality
-- Desktop & Mobile-friendly UIs
+- Responsiveness for mobile, tablet and desktop
 - Saves CV as PDF and downloads it
 - Real-time adoption of changes
 - Clean UI/UX
