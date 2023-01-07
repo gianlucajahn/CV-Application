@@ -37,7 +37,7 @@ I let [Google Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/b
 
 ## What I learned 📚
 - mapping over array state to make sure the selected elements receive changes on user interactions with the site
-- conditional class assignments to either render a desktop or a mobile view for the application, depending on screen width
+- conditional class assignments to either render a desktop or a mobile view for the application
 - using external libraries within my application to enable the user to download and save their CV
 
 ## Motivation
