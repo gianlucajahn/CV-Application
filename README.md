@@ -1,6 +1,6 @@
 <h1 align="center">📑 CV Application</h1>
 
-![](https://i.imgur.com/lhRJvY6.png)
+![](https://i.imgur.com/Zntl0Gc.png)
 <p align="center">
   CV Creator built with React
 </p>
