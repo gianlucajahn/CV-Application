@@ -13,15 +13,15 @@ class EducationalForm extends React.Component {
         return (
             <div className={styles['educationalForm']}>
                 <form className={styles["schoolForm"]}>
-                   <h2>Educational Data</h2>
+                   <h2>Educación Profesional</h2>
                    <div className={styles["university"]}>
                      <div className={styles['headline']}>
                         <img src={require("../../icons/gradcap.png")} className={styles['icon']} alt="University Icon"/>
-                        <h3>University</h3>
+                        <h3>Universidad</h3>
                       </div>
                        <input 
                           className={styles["input"]}
-                          placeholder=" Your University"
+                          placeholder=" Nombre de la universidad"
                           name="universityName"
                           value={this.props.info[7].value}
                           onChange={this.props.handleInfoChange}
@@ -34,7 +34,7 @@ class EducationalForm extends React.Component {
                    <div className={styles["degree"]}>
                        <input
                          className={styles["input"]}
-                         placeholder=" Your Degree"
+                         placeholder=" Titulo"
                          name="universityDegree"
                          value={this.props.info[8].value}
                          onChange={this.props.handleInfoChange}
@@ -47,7 +47,7 @@ class EducationalForm extends React.Component {
                    <div className={styles["duration1"]}>
                         <input
                           className={styles["input"]}
-                          placeholder=" Timeframe"
+                          placeholder=" Otro estudio"
                           name="universityDate"
                           value={this.props.info[9].value}
                           onChange={this.props.handleInfoChange}
@@ -60,11 +60,11 @@ class EducationalForm extends React.Component {
                    <div className={styles["school"]}>
                      <div className={styles['headline']}>
                         <img src={require("../../icons/school.png")} className={styles['icon']} alt="School Icon"/>
-                        <h3>School</h3>
+                        <h3>Educación Escolar</h3>
                       </div>
                        <input 
                           className={styles["input"]}
-                          placeholder=" Your School"
+                          placeholder=" Nombre de la Escuela"
                           name="schoolName"
                           value={this.props.info[10].value}
                           onChange={this.props.handleInfoChange}
@@ -77,7 +77,7 @@ class EducationalForm extends React.Component {
                    <div className={styles["degree"]}>
                        <input
                          className={styles["input"]}
-                         placeholder=" Your Degree"
+                         placeholder=" Titulo"
                          name="schoolDegree"
                          value={this.props.info[11].value}
                          onChange={this.props.handleInfoChange}
@@ -90,7 +90,7 @@ class EducationalForm extends React.Component {
                    <div className={styles["duration2"]}>
                         <input
                           className={styles["input"]}
-                          placeholder=" Timeframe"
+                          placeholder=" Otro Titulo"
                           name="schoolDate"
                           value={this.props.info[12].value}
                           onChange={this.props.handleInfoChange}
