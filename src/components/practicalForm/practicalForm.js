@@ -14,7 +14,7 @@ class PracticalForm extends React.Component {
     render() {
         return (
             <div className={styles['practicalForm']}>
-                <h2>Practical Experience</h2>
+                <h2>Experiencia Profesional</h2>
                 <form className={styles['workForm']}>
                     <div className={styles['work']}>
 
@@ -23,7 +23,7 @@ class PracticalForm extends React.Component {
                             <div>
                               <div className={styles['headline']}>
                                 <img src={require("../../icons/work.png")} className={styles['icon']} fill="currentColor" alt="Work Icon"/>
-                                <h3>Work Experience #{index + 1}</h3>
+                                <h3>Experiencia Laboral  #{index + 1}</h3>
                                 <div className={styles['divRemove']}>
 
                                   {this.props.experience.length > 1 &&
@@ -51,7 +51,7 @@ class PracticalForm extends React.Component {
                                 id={work.id}
                                 onChange={this.props.handleWorkChange}
                                 value={work.company}
-                                placeholder=" Company"
+                                placeholder=" Nombre de la Compañia"
                                 name="company"
                                 type="text"
                                 required>
@@ -64,7 +64,7 @@ class PracticalForm extends React.Component {
                                 id={work.id}
                                 onChange={this.props.handleWorkChange}
                                 value={work.position}
-                                placeholder=" Your Position"
+                                placeholder=" Posicion Desempeñada"
                                 name="position"
                                 type="text"
                                 required>
@@ -77,7 +77,7 @@ class PracticalForm extends React.Component {
                                 id={work.id}
                                 onChange={this.props.handleWorkChange}
                                 value={work.task}
-                                placeholder=" Your main occupation, daily tasks and workfield"
+                                placeholder=" Tu ocupación principal, tareas diarias y campo de trabajo."
                                 name="task"
                                 type="text"
                                 required
@@ -91,7 +91,7 @@ class PracticalForm extends React.Component {
                                 id={work.id}
                                 onChange={this.props.handleWorkChange}
                                 value={work.start}
-                                placeholder=" Start Date of employment"
+                                placeholder=" Fecha de inicio del empleo"
                                 name="start"
                                 type="text"
                                 required
@@ -105,7 +105,7 @@ class PracticalForm extends React.Component {
                                 id={work.id}
                                 onChange={this.props.handleWorkChange}
                                 value={work.end}
-                                placeholder=" End Date of employment"
+                                placeholder=" Fecha de finalización del empleo"
                                 name="end"
                                 type="text"
                                 required
@@ -117,7 +117,7 @@ class PracticalForm extends React.Component {
 
                         {this.props.experience.length < 3 &&
                           <button type="button" className={styles['add']} onClick={this.props.addWork} aria-label="add">
-                            <img src={require("../../icons/plus.png")} className={styles['imgButton']} alt="Add Icon"/>New
+                            <img src={require("../../icons/plus.png")} className={styles['imgButton']} alt="Add Icon"/>Agregar
                           </button>
                         }
 
@@ -126,7 +126,7 @@ class PracticalForm extends React.Component {
 
                       <div className={styles['headline']}>
                         <img src={require("../../icons/skills.png")} className={styles['icon']} alt="Skills Icon"/>
-                        <h3>Skills & Technologies</h3>
+                        <h3>Habilidades y tecnologías</h3>
                       </div>
 
                       <div className={styles['skills']}>
@@ -165,7 +165,7 @@ class PracticalForm extends React.Component {
 
                       {this.props.skills.length < 9 &&
                           <button type="button" className={styles['add']} onClick={this.props.addSkill} aria-label="Close" alt="remove">
-                            <img src={require("../../icons/plus.png")} className={styles['imgButton']} alt="Add Icon"/>New
+                            <img src={require("../../icons/plus.png")} className={styles['imgButton']} alt="Add Icon"/>Agregar
                           </button>
                       }
 

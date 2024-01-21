@@ -13,7 +13,7 @@ class EducationalPreview extends React.Component {
     return (
       <div className={styles['edu']}>
         <div className={styles['contact']}>
-          <h3 className={styles['section-h3']}>CONTACT</h3>
+          <h3 className={styles['section-h3']}>CONTACTO</h3>
 
           <div className={styles['details']}>
            <div className={styles['detail']}>
@@ -39,7 +39,7 @@ class EducationalPreview extends React.Component {
         </div>
 
         <div className={styles['education']}>
-          <h3 className={styles['section-h3']}>EDUCATION</h3>
+          <h3 className={styles['section-h3']}>EDUCACION</h3>
 
           <div className={styles['university']}>
             <h4>{this.props.info[8].value}</h4>
@@ -55,7 +55,7 @@ class EducationalPreview extends React.Component {
         </div>
 
         <div className={styles['skill-preview']}>
-          <h3 className={styles['section-h3']}>SKILLS</h3>
+          <h3 className={styles['section-h3']}>HABILIDADES </h3>
 
           <ul className={styles['skillList']}>
           {this.props.skills.map((skill, i) => {

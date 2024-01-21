@@ -13,12 +13,12 @@ class PracticalPreview extends React.Component {
     return (
       <div className={styles['practical']}>
         <div className={styles['profile']}>
-          <h3 className={styles['section-h3']}>PROFILE</h3>
+          <h3 className={styles['section-h3']}>PERFIL</h3>
           <p className={styles['bio']}>{this.props.info[6].value}</p>
         </div>
   
         <div className={styles['work-section']}>
-          <h3 className={styles['section-h3']}>WORK EXPERIENCE</h3>
+          <h3 className={styles['section-h3']}>EXPERIENCIA LABORAL</h3>
 
           {this.props.experience[0].company === "" ? "" : this.props.experience.map((exp, i) => {
             return (
